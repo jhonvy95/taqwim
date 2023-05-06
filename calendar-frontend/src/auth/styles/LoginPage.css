@@ -1,0 +1,249 @@
+.Home {
+  display: flex;
+  min-height: 100vh;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  width: 50%;
+  background: rgb(64, 112, 244);
+  background: linear-gradient(353deg, rgba(64, 112, 244, 1) 0%, rgba(4, 80, 162, 1) 100%);
+}
+
+.presentation .calendar_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  width: 60%;
+  height: 60%;
+}
+
+.presentation .calendar_image img {
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right .calendar_logo {
+  width: 15%;
+  height: 13%;
+}
+
+.right .calendar_logo img {
+  width: 100%;
+}
+
+.right .calendar_logo_letter {
+  margin-top: 1rem;
+  width: 30%;
+  height: 8%;
+}
+
+.right .calendar_logo_letter img {
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  width: 50%;
+}
+.container {
+  position: relative;
+  max-width: 430px;
+  overflow: hidden;
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.container .forms {
+  display: flex;
+  align-items: center;
+  height: 430px;
+  width: 200%;
+  transition: height 0.2s ease;
+  overflow: hidden;
+}
+
+.container .form {
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+  transition: margin-left 0.18s ease;
+}
+
+.container.active .login {
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container .signup {
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+.container.active .signup {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.container.active .forms {
+  height: 599px;
+}
+.container .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #4070f4;
+  border-radius: 25px;
+}
+
+.form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.input-field input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.input-field input:focus {
+  border-bottom: 2px solid #4070f4;
+}
+
+.input-field svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:focus ~ svg {
+  color: #4070f4;
+}
+
+.fomr_login {
+  width: 100%;
+}
+
+i {
+  color: #0062cc;
+}
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.login-form-1 {
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+}
+.login-form-1 h3 {
+  text-align: center;
+  color: #333;
+}
+.login-form-2 {
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  background: #0062cc;
+}
+.login-form-2 h3 {
+  text-align: center;
+  color: #fff;
+}
+.login-container form {
+  padding: 10%;
+}
+.btnSubmit {
+  width: 50%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  border: none;
+  cursor: pointer;
+}
+.login-form-1 .btnSubmit {
+  color: #fff;
+  background-color: #0062cc;
+}
+.login-form-2 .btnSubmit {
+  background-color: #fff;
+  color: #0062cc;
+}
+.login-form-2 .ForgetPwd {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-form-1 .ForgetPwd {
+  color: #0062cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form .button {
+  margin-top: 35px;
+}
+
+.form .button input {
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button input:hover {
+  background-color: #3b6be0;
+}
+
+.form .login-signup {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form a.text {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.form a.text:hover {
+  text-decoration: underline;
+}

@@ -28,4 +28,5 @@
     - moment
 
 ## Live Demo
-[Live Demo Link](https://taqwim.netlify.app/auth/login)
+<a href="https://taqwim.netlify.app/#/auth/login">link</a>
+[Live Demo Link](https://taqwim.netlify.app/#/auth/login)

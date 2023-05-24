@@ -28,4 +28,4 @@
     - moment
 
 ## Live Demo
-[Live Demo Link](https://rappel.netlify.app/#/home)
+[Live Demo Link](https://taqwim.netlify.app/auth/login)
